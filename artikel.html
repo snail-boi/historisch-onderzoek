@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="generalstyle.css">
+    <link rel="stylesheet" href="artikel.css">
+</head>
+<body>
+    <nav class="navbar-main">
+        <button class="navbar-toggle">
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+        </button>
+        <ul class="navbar-menu">
+            <li class="navbar-item"><a href="index.html">Home</a></li>
+            <li class="navbar-item"><a href="artikel.html">artikel</a></li>
+            <li class="navbar-item"><a href="#film-boek">Film of Boek</a></li>
+            <li class="navbar-item"><a href="#afbeeldingen">Afbeeldingen</a></li>
+            <li class="navbar-item"><a href="#cartoons">Cartoons</a></li>
+            <li class="navbar-item"><a href="#museeum">Museeum Bezoek</a></li>
+            <li class="navbar-item"><a href="logboek.html">Logboek</a></li>
+        </ul>
+    </nav>
+
+
+    <h1>Francisco Franco en de Spaanse Burgeroorlog</h1>
+    <article>
+        <div class="container">
+        <div class="question-container">
+            <div class="question">Wie was Francisco Franco?</div>
+            <button onclick="toggleAnswer('answer1')">Toon Antwoord</button>
+            <div id="answer1" class="answer">
+            Francisco Franco (1892-1975) was een Spaanse generaal die tijdens de Spaanse Burgeroorlog (1936-1939) de nationalistische troepen leidde. Na de overwinning vestigde hij een autoritair regime en regeerde hij Spanje als dictator van 1939 tot zijn dood in 1975.
+            </div>
+        </div>
+
+        <div class="question-container">
+            <div class="question">Wat waren de oorzaken van de Spaanse Burgeroorlog?</div>
+            <button onclick="toggleAnswer('answer2')">Toon Antwoord</button>
+            <div id="answer2" class="answer">
+            De Spaanse Burgeroorlog ontstond uit politieke en sociale spanningen tussen republikeinse en nationalistische krachten. Factoren zoals economische ongelijkheid, regionale autonomie, de rol van de katholieke kerk en de opkomst van fascistische en communistische ideologieën droegen bij aan de verdeeldheid die leidde tot de oorlog.
+            </div>
+        </div>
+
+        <div class="question-container">
+            <div class="question">Hoe kwam Franco aan de macht?</div>
+            <button onclick="toggleAnswer('answer3')">Toon Antwoord</button>
+            <div id="answer3" class="answer">
+            Franco kwam aan de macht door het leiden van een militaire opstand tegen de democratisch gekozen republikeinse regering in 1936. Deze opstand leidde tot de Spaanse Burgeroorlog, die eindigde met de overwinning van de nationalisten en de vestiging van Franco's dictatuur.
+            </div>
+        </div>
+
+        <div class="question-container">
+            <div class="question">Wat waren de kenmerken van Franco's regime?</div>
+            <button onclick="toggleAnswer('answer4')">Toon Antwoord</button>
+            <div id="answer4" class="answer">
+            Franco's regime was autoritair en nationalistisch, gekenmerkt door censuur, politieke repressie en de afwezigheid van democratische vrijheden. Het regime kreeg steun van de katholieke kerk en was anticommunistisch. Gedurende de vroege jaren na de oorlog werden duizenden politieke tegenstanders geëxecuteerd of gevangen gezet.
+            </div>
+        </div>
+
+        <div class="question-container">
+            <div class="question">Hoe wordt Franco herdacht in Spanje?</div>
+            <button onclick="toggleAnswer('answer5')">Toon Antwoord</button>
+            <div id="answer5" class="answer">
+            In 2025 markeerde Spanje de vijftigste verjaardag van Franco's dood. Deze mijlpaal leidde tot nationale discussies over zijn erfenis, met nadruk op de overgang naar democratie en waarschuwingen tegen het herleven van autoritaire waarden. Er waren zowel herdenkingen als kritiek op de manier waarop deze periode wordt herinnerd.
+            </div>
+        </div>
+        </div>
+
+        <iframe src="https://historiek.net/francisco-franco-spaans-generaal/62975/" width="100%" height="900rem"></iframe> 
+    </article>
+</body>
+<script>
+    function toggleAnswer(answerId) {
+      const answer = document.getElementById(answerId);
+      if (answer.style.display === "none" || answer.style.display === "") {
+        answer.style.display = "block";
+      } else {
+        answer.style.display = "none";
+      }
+    }
+  </script>
+</html>
