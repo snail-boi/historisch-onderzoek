@@ -1,0 +1,86 @@
+/* Algemene styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: red;
+}
+
+.navbar-main {
+    display: flex;
+    justify-content: flex-start;
+    position:sticky;
+    top: 0px;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    transition: all 0.3s ease;
+    
+}
+
+/* De lijst van de menu-items */
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    margin-left: 20px;
+    padding: 0;
+    
+}
+
+.navbar-item {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect: horizontaal uitstrekkende menu */
+.navbar-main:hover .navbar-menu .navbar-item {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Het hamburger menu dat verandert bij hover */
+.navbar-main:hover .hamburger:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.navbar-main:hover .hamburger:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-main:hover .hamburger:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Algemene styling voor de links */
+.navbar-item a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar-item a:hover {
+    color: #ff6347; /* Verander de kleur bij hover (optioneel) */
+}

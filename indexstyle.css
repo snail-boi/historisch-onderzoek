@@ -1,0 +1,43 @@
+/* Algemene stijl voor het artikel */
+.situeering {
+    width: 50rem;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* Koptekst styling */
+.situeering h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* Styling voor de lijst */
+.situeering ul {
+    list-style-type: none;
+    padding-left: 0;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+/* Styling voor de lijstitems */
+.situeering li {
+    font-family: 'Verdana', sans-serif;
+    font-size: 16px;
+    color: #34495e;
+    margin-bottom: 8px;
+}
+
+/* Specifieke stijl voor de 'wanneer' en 'waar' tekst */
+.situeering li:first-child {
+    font-weight: bold;
+}
+
+.situeering li:nth-child(2) {
+    font-style: italic;
+}
