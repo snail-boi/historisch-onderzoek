@@ -1,12 +1,16 @@
 /* Algemene stijl voor het artikel */
 .situeering {
     width: 50rem;
+    height: 30rem;
     background-color: #f4f4f4;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 40px auto;
+    margin: 40px;
     text-align: center;
+}
+article.situeering {
+    display: inline-block;
 }
 
 /* Koptekst styling */
@@ -16,6 +20,7 @@
     color: #2c3e50;
     margin-bottom: 10px;
 }
+
 
 /* Styling voor de lijst */
 .situeering ul {
@@ -33,11 +38,68 @@
     margin-bottom: 8px;
 }
 
-/* Specifieke stijl voor de 'wanneer' en 'waar' tekst */
-.situeering li:first-child {
-    font-weight: bold;
-}
 
-.situeering li:nth-child(2) {
-    font-style: italic;
+ul.tijd {
+    display: grid;
+    margin-top: 2rem;
+    margin-bottom: 7rem;
+
+    width: 100%;
+    height: 5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: .3rem;
+    align-items: center;
 }
+li.tijd {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: skyblue;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+
+}
+  
+  .tijd .tooltiptext {
+    visibility: hidden;
+    width: 50rem;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+
+    margin-left: -60px; /* Zorg ervoor dat de tooltip gecentreerd is */
+  }
+  
+  li.tijd:nth-child(1):hover .tooltiptext {
+    visibility: visible;
+    bottom: -65%;
+    left: 35%;
+  }
+  li.tijd:nth-child(2):hover .tooltiptext {
+    visibility: visible;
+    bottom: -80%;
+    left: -67.5%;
+  }
+  li.tijd:nth-child(3):hover .tooltiptext {
+    visibility: visible;
+    bottom: -65%;
+    left: -170%;
+  }
+  li.tijd:nth-child(4):hover .tooltiptext {
+    visibility: visible;
+    bottom: -65%;
+    left: -275%;
+  }
+  li.tijd:nth-child(5):hover .tooltiptext {
+    visibility: visible;
+    bottom: -75%;
+    left: -375%;
+  }
+
+  img{
+    width: 53.5%;
+  }
