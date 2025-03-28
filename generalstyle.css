@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: red;
+    
 }
 
 .navbar-main {
@@ -13,6 +13,7 @@ body {
     top: 0px;
     align-items: center;
     padding: 10px;
+    z-index: 100000;
 }
 
 .navbar-toggle {
@@ -30,6 +31,7 @@ body {
     width: 30px;
     height: 4px;
     background-color: white;
+    outline: solid black .01rem;
     transition: all 0.3s ease;
     
 }
@@ -79,6 +81,7 @@ body {
     display: block;
     padding: 10px;
     transition: color 0.3s ease;
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
 }
 
 .navbar-item a:hover {
