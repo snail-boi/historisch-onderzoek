@@ -1,7 +1,11 @@
-/* Algemene stijl voor het artikel */
-body{
-  background-color: lightblue;
+h1{
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  font-weight: 900;
 }
+
+
 figure {
   margin: 20px;
   text-align: center;

@@ -5,9 +5,6 @@ h1 {
   font-weight: bolder;
   padding-bottom: 1.5rem;
 }
-body {
-  background-color: lightblue;
-}
 .container {
   max-width: 800px;
   margin: 0;

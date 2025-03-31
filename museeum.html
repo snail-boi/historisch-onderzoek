@@ -25,5 +25,30 @@
             <li class="navbar-item"><a href="logboek.html">Logboek</a></li>
         </ul>
     </nav>
+    <div class="container">
+        <!-- Afbeelding aan de linkerkant -->
+        <div class="left-side">
+            <figure>
+                <img src="images/crouton.png" alt="Afbeelding">
+                <figcaption>mijn foto</figcaption>
+            </figure>
+        </div>
+        
+        <!-- Doos met opties aan de rechterkant -->
+        <div class="right-side">
+            <div class="options">
+                <button onclick="openFrame('optie1')">verslag</button>
+                <button onclick="openFrame('optie2')">onderzoeksvragen</button>
+                <button onclick="openFrame('optie3')">onderzoeksantwoorden</button>
+            </div>
+            
+            <!-- Frame waar de inhoud komt -->
+            <div class="frame" id="frame">
+                <p>Klik op een optie om inhoud te laden.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="museeum.js"></script>
 </body>
 </html>
