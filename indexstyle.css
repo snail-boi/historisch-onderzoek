@@ -2,7 +2,17 @@
 body{
   background-color: lightblue;
 }
+figure {
+  margin: 20px;
+  text-align: center;
+}
 
+figcaption {
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+  font-style: italic;
+}
 
 .situeering {
     width: 90%;

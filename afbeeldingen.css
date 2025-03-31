@@ -1,0 +1,41 @@
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+}
+
+/* Gallery container */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px; /* Spacing between images */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual image and caption styling */
+figure {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Image styling */
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Caption styling */
+figcaption {
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+    margin-top: 5px;
+}
