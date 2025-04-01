@@ -48,3 +48,15 @@ article{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+figure {
+  margin: 20px;
+  text-align: center;
+}
+
+figcaption {
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+  font-style: italic;
+}

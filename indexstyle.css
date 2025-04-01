@@ -1,9 +1,15 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 h1{
   font-size: 2rem;
   font-weight: 700;
-  width: 90%;
+  width: 50%;
   height: 30%;
-  background-color: #f4f4f4;
+  background-color:#f4f4f4;
+  color: black ;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 
@@ -130,3 +136,8 @@ li.tijd {
   img{
     width: 53.5%;
   }
+
+  
+.hoofdtitel {
+  background-color: lightblue;
+}

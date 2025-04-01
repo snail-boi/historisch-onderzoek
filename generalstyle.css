@@ -36,12 +36,20 @@ body {
     
 }
 
+.hamburger:nth-child(1), .hamburger:nth-child(3){
+    background-color: red;
+}
+.hamburger:nth-child(2) {
+    background-color: yellow;
+}
+
 /* De lijst van de menu-items */
 .navbar-menu {
     display: flex;
     list-style: none;
     margin-left: 20px;
     padding: 0;
+    text-align: center;
     
 }
 
@@ -64,6 +72,7 @@ body {
 /* Het hamburger menu dat verandert bij hover */
 .navbar-main:hover .hamburger:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
+    background-color: black;
 }
 
 .navbar-main:hover .hamburger:nth-child(2) {
@@ -72,6 +81,7 @@ body {
 
 .navbar-main:hover .hamburger:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
+    background-color: black;
 }
 
 /* Algemene styling voor de links */
@@ -83,6 +93,7 @@ body {
     width: 5rem;
     transition: color 0.3s ease;
     text-shadow: 0px 0px 5px rgb(0, 0, 0);
+    text-align: center;
 }
 
 .navbar-item a:hover {
