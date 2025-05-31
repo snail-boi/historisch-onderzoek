@@ -81,3 +81,15 @@ figcaption {
     margin: 0;
     color: #555;
 }
+ol {
+    list-style: decimal;
+}
+li{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+h3{
+    font-size: 2rem;
+    padding-top: 2rem;
+}
