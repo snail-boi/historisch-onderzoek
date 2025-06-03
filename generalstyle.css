@@ -50,17 +50,21 @@ body {
     margin-left: 20px;
     padding: 0;
     text-align: center;
-    
+    width: 75%;
 }
 
 .navbar-item {
     color: white;
-    padding: 10px;
+    padding-left: 1%;
+    padding-right: 1%;
     text-align: center;
     cursor: pointer;
     opacity: 0;
     transform: translateX(-100%);
     transition: all 0.3s ease-in-out;
+}
+.navbar-item:last-child {
+    padding-left: 13%;
 }
 
 /* Hover effect: horizontaal uitstrekkende menu */
