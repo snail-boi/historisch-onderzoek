@@ -63,8 +63,8 @@ body {
     transform: translateX(-100%);
     transition: all 0.3s ease-in-out;
 }
-.navbar-item:last-child {
-    padding-left: 13%;
+.navbar-item:nth-child(7) {
+    padding-left: 8rem;
 }
 
 /* Hover effect: horizontaal uitstrekkende menu */
